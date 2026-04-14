@@ -87,12 +87,19 @@ hr.divider{border:none;border-top:1px solid rgba(245,240,250,.07);margin:2.5rem 
   <div class="content-box">
     <span class="section-label">Contact Us</span>
     <form action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="43ed6552-97eb-4813-ba41-0cd4f0015cb1">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-  <button type="submit">Submit Form</button>
-</form>
+      <input type="hidden" name="access_key" value="43ed6552-97eb-4813-ba41-0cd4f0015cb1">
+      <input type="hidden" name="subject" value="New Contact Form Submission - Miss Representation Rise Up">
+      <input type="hidden" name="from_name" value="Miss Representation Rise Up Website">
+      <input type="hidden" name="_replyto" value="press@therepproject.org">
+      <div class="form-grid">
+        <div class="form-group"><label>First Name *</label><input type="text" name="firstname" placeholder="First name" required></div>
+        <div class="form-group"><label>Last Name *</label><input type="text" name="lastname" placeholder="Last name" required></div>
+        <div class="form-group"><label>Email Address *</label><input type="email" name="email" placeholder="your@email.com" required></div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="Your phone number"></div>
+        <div class="form-group form-full"><label>Message</label><textarea name="message" placeholder="How can we help you?"></textarea></div>
+      </div>
+      <div class="form-submit-wrap"><button type="submit" class="form-submit">Send Message</button></div>
+    </form>
   </div>
 
   <hr class="divider">
